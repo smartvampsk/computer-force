@@ -1,0 +1,279 @@
+html, body{
+	height: 100%;
+}
+body{
+	font-family: 'Alice';
+	display: flex;
+	flex-direction: column;
+
+}
+
+.topHeader{
+	text-align: center;
+}
+
+.navBar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-webkit-background: #139187;
+	-ms-background: green;
+	-o-background: #139187;
+	background: #139187;
+	padding: 3px 0;
+}
+
+.navigation ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 15px;
+	font-family: 'Alice';
+}
+
+.navigation a{
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover{
+	color: gold;
+}
+.active a{
+	color: gold;
+}
+.searchForm{
+	padding-top: 13px;
+	padding-right: 20px;
+}
+
+.searchForm input{
+	padding: 5px;
+	border: none;
+	box-shadow: 1px 1px 2px 1px black;
+}
+
+.searchForm button, .checkoutBtn, .form-submit button{
+	margin-left: 5px;
+	padding: 5px 20px;
+	background: #008CBA;
+	border: none;
+	border-radius: 5%;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	box-shadow: 2px 2px 2px 1px black;
+	transition: 0.5s;
+}
+.searchForm button:hover, .checkoutBtn:hover, .form-submit button:hover{
+	box-shadow: 2px 2px 2px 1px cyan;
+	background: #008CBA;
+}
+
+.footer{
+	-ms-background: #139187;
+	background: #139187;
+	padding: 1px;
+	text-align: center;
+	color: white;
+	font-family: 'Alice';
+	flex-shrink: 0;
+}
+
+section{
+	display: flex;
+	flex-direction: row;
+	flex: 1 0 auto;
+}
+main{
+	width: 80%;
+	padding: 10px;
+}
+.aside{
+	width: 20%;
+	padding: 10px;
+	border-left: 4px dashed lightgray;
+}
+.aside > div{
+	display: flex;
+	justify-content: center;
+}
+.aside h2, .welcome h1, .welcome h2, .icon-about, .welcome h3{
+	padding-top: 5px;
+	color: #139187;
+}
+table{
+	border-collapse: collapse;
+	width: 80%;
+}
+td, th {
+  border: 2px solid gray;
+  text-align: center;
+  padding: 20px;
+}
+.checkoutBtn{
+	box-shadow: none;
+	transition: 0s;
+}
+
+.welcome{
+	padding-bottom: 15px;
+}
+
+.device{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.device-card{
+	padding: 15px;
+	padding-bottom: 40px;
+}
+.device-card{
+	display: flex;
+	justify-content: center;
+	width: 33.33%;
+}
+.device-card img{
+	height: 17vh;
+	width: 14vw;
+}
+.device-card h2{
+	color: #139187;
+	text-align: center;
+}
+.device-card a{
+	text-decoration: none;
+}
+
+.aboutWelcome{
+	width: 50%;
+	text-align: justify;
+}
+.contact{
+	padding-left: 25px;
+}
+
+.registerForm {
+	width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-label {
+    width: 20%;
+}
+
+.form-input {
+    width: 40%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-gender{
+	padding: 10px 0 8px 0;
+}
+
+.gender{
+	width: 3%;
+}
+.compulsory{color: red;}
+
+.form-submit{
+	width: 60%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.register{
+	background: #139187 !important;
+}
+.register, .clear{
+	padding: 10px 25px !important;
+}
+
+@media screen and (max-width: 600px) {
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+	main, .aside{
+		width: 100%;
+	}
+	.aside{
+		border: none;
+		border-top: 4px dashed lightgray;
+		padding-bottom: 20px;
+	}
+	.footer{
+		position: relative;
+	}
+	.navigation ul li{
+		display: flex;
+		flex-direction: column;
+		padding-top: 3px;
+	}
+	.navBar{
+		display: flex;
+		flex-direction: column;
+	}
+	.searchForm{
+		margin-top: -15px;
+		padding-left: 10px;
+		padding-bottom: 5px;
+		display: flex;flex-direction: column;
+	}
+	.searchForm button{
+		margin-top: 5px;
+		margin-left: 0px;
+	}
+	.device{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.device-card img{
+		height: 10vh;
+		width: 12vw;
+	}
+	.aboutWelcome{
+		width: 90%;
+	}
+	.form-control {
+	    padding-top: 10px;
+	    display: flex;
+	    flex-direction: column;
+	}
+	.form-input, .form-label{
+		width: 90%;
+	}
+	.form-gender{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.gender{
+		margin-left: 35px;
+	}
+	.form-submit{
+		width: 90%;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 300px) {
+	.device-card h2{
+		font-size: 16px;
+	}
+}
