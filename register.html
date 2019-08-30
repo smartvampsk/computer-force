@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Computer Force - Home</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+	</head>
+
+	<body>
+		<header>
+			<article class="topHeader">
+				<a href="index.html"><img src="images/logo.png" alt="Computer Force Logo"></a>
+			</article>
+			<article class="navBar">
+				<nav class="navigation">
+					<ul>
+						<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="product.html"><i class="fa fa-shopping-cart"></i> Product</a></li>
+						<li class="active"><a href="register.html"><i class="fa fa-user-plus"></i> Register</a></li>
+						<li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+					</ul>
+				</nav>
+				<form class="searchForm">
+					<input type="text" form="search" placeholder="Search here...">
+					<button type="submit">Search</button>
+				</form>
+			</article>
+		</header>
+
+		<section>
+			<main>
+				<div class="welcome registerWelcome">
+					<h1>Registration Form</h1>
+					<p>Please complete the following form to register for an account on our website.</p>
+					<form method="POST" class="registerForm">
+						<div class="form-control">
+                            <label class="form-label" for="firstname">Firstname <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="firstname" id="firstname" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="surname">Surname <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="surname" id="surname" placeholder=" " required>
+                        </div>
+                        <div class="form-control form-gender">
+                            <label class="form-label" for="gender">Gender <span class="compulsory">*</span></label>
+                            <input class="gender" type="radio" name="gender" id="gender">Male
+                            <input class="gender" type="radio" name="gender" id="gender">Female
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="dob">Date of Birth</label>
+                            <input class="form-input" type="date" name="dob" id="dob" placeholder=" " >
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="address">Address <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="address" id="address" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="suburb">Suburb <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="suburb" id="suburb" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="postcode">Postcode <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="postcode" id="postcode" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="state">State <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="state" id="state" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="phone">Phone No.</label>
+                            <input class="form-input" type="text" name="phone" id="phone" placeholder=" ">
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="email">Email <span class="compulsory">*</span></label>
+                            <input class="form-input" type="email" name="email" id="email" placeholder=" " required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="username">Username <span class="compulsory">*</span></label>
+                            <input class="form-input" type="text" name="username" id="username" placeholder="" required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="password">Password <span class="compulsory">*</span></label>
+                            <input class="form-input" type="password" name="password" id="password" placeholder="" required>
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="confP">Confirm Password <span class="compulsory">*</span></label>
+                            <input class="form-input" type="password" name="confP" id="confP" placeholder="" required>
+                        </div>
+                        <div class="form-control form-submit">
+                            <button type="submit" class="register">Register</button>
+                            <button type="reset" class="clear">Clear</button>
+                        </div>
+					</form>
+				</div>
+			</main>			
+			<aside class="aside">
+				<div>
+					<h2>Purchases</h2>
+				</div>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>0 items</td>
+								<td>$0.00</td>
+							</tr>
+							<tr>
+								<td colspan="2"><button type="submit" class="checkoutBtn">Go to Checkout</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</aside>
+		</section>
+		<footer class="footer">
+			<p>&copy; 2019, Computer Force</p>
+		</footer>
+	</body>
+</html>
